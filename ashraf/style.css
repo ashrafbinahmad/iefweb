@@ -1,0 +1,31 @@
+* {
+  font-family: "montserrat";
+  margin: 0px;
+  padding: 0px;
+}
+
+div.head {
+  background-image: url('images/slide_4.jpg'); 
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 850px;
+}
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+.nav-black {
+  background-color: black;
+  color: white;
+}
+.nav-white {
+  background-color: white;
+  color: black;
+}
+
+.head_content {
+  height: 500px;
+  max-width: 350px;
+}
