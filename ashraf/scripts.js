@@ -1,12 +1,17 @@
-var nav = document.querySelector('.nav');
-window.onscroll = function () { 
-    "use strict";
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ){
-        nav.classList.add("nav-black");
-        nav.classList.remove("nav-white");
-    } 
-    else {
-        nav.classList.add("nav-white");
-        nav.classList.remove("nav-black");
+var nav = document.getElementById('nav'); // Identify target
+var nav
+
+window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault();
+
+    if (window.scrollY <= 150) { // Just an example
+        // nav.style.backgroundColor = 'transparent'; // or default color
+        nav.classList.add('nav-normal')
+        nav.classList.remove('nav-scrolled')
+    } else {
+        // nav.style.backgroundColor = 'color'
+        nav.classList.add('nav-scrolled')
+        nav.classList.remove('nav-normal')
+
     }
-};
+});
